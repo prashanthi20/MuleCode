@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:munit="http://www.mulesoft.org/schema/mule/munit" xmlns:munit-tools="http://www.mulesoft.org/schema/mule/munit-tools"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xsi:schemaLocation="
+		http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+		http://www.mulesoft.org/schema/mule/munit http://www.mulesoft.org/schema/mule/munit/current/mule-munit.xsd
+		http://www.mulesoft.org/schema/mule/munit-tools  http://www.mulesoft.org/schema/mule/munit-tools/current/mule-munit-tools.xsd">
+	<munit:config name="soap-test-suite.xml" />
+	<munit:test name="soap-test-suite-soapFlowTest" doc:id="d4361c93-791f-40af-aebb-2adde5297061" description="Test">
+		<munit:execution >
+			<flow-ref doc:name="Flow-ref to soapFlow" doc:id="b96fc6e8-6ef2-4fd9-bad9-296ecdb386dd" name="soapFlow"/>
+		</munit:execution>
+	</munit:test>
+
+
+</mule>
